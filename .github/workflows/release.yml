@@ -16,7 +16,7 @@ jobs:
   test-and-build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
           persist-credentials: false
@@ -63,7 +63,7 @@ jobs:
             exit 1
           fi
           printf 'tag=%s\n' "$TAG" >> "$GITHUB_OUTPUT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ steps.release-tag.outputs.tag }}
           persist-credentials: false
