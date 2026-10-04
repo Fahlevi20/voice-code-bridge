@@ -80,7 +80,7 @@ jobs:
           if os.environ['TAG'] != expected:
               raise SystemExit(f'Tag {os.environ["TAG"]} does not match package version {expected}')
           PY
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: python-dist
           path: dist
