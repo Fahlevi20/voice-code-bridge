@@ -1,0 +1,33 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local recordings and speech models
+*.wav
+*.mp3
+*.flac
+models/
+recordings/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
